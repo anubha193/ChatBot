@@ -1,10 +1,12 @@
 import express from "express";
 import dotenv from "dotenv";
 import fetch from "node-fetch";
+import cors from 'cors';
 
 dotenv.config();
 
 const app = express();
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 const API_KEY = process.env.GEMINI_API_KEY;

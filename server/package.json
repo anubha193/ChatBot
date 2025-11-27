@@ -12,6 +12,6 @@
     "build": "npm i",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start":"node index.js"
+    "start": "node index.js"
   }
 }
