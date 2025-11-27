@@ -5,13 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/ChatBot/',           // 👈 IMPORTANT: top-level, matches repo name
   plugins: [react()],
-    server: {
-    proxy: {
-      '/api': {
-        target: 'https://chatbot-6tun.onrender.com', // your real backend
-        changeOrigin: true,
-      },
-    },
-  },
 
 })
